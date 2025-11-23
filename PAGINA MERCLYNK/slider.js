@@ -9,3 +9,4 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 }); // Detecta rápido el elemento
 
 elements.forEach(el => observer.observe(el));
+
