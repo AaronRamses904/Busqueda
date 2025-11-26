@@ -298,7 +298,7 @@ nav{
   height: auto;
 
   /* 🔥 COLUMNAS EN PC */
-  column-count: 2;
+  column-count: 5;
   column-gap: 2rem;
 }
 
