@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MercLynk</title>
+  <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Merc<span class="resaltado">Lynk</span></h1>
+    <nav>
+      <a href="../../PAGINA MERCLYNK/index.html">Inicio</a>
+      <a href="../busqueda.html">Categorias</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- CATÁLOGO -->
+<main>
+  <section class="catalogo">
+    <h2>CATEGORIA ROPA</h2>
+    <div class="productos">
+
+      <!-- 🔸 PRODUCTO 1 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img1.jpg',
+          'Cabblese Classie blanco',
+          'Un conjunto clásico en color blanco, diseñado para brindar elegancia y frescura. Ideal para uso diario o para ocasiones casuales con un toque moderno.'
+        )">
+        <img src="imagen3/img1.jpg" alt="Cabblese Classie blanco">
+        <h3>Cabblese Classie blanco</h3>
+        <p>¡Simple, fresco y elegante!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 2 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img2.jpg',
+          'Juego de polos básicos',
+          'Pack de polos básicos cómodos y versátiles, perfectos para combinar con cualquier estilo y usar en cualquier ocasión.'
+        )">
+        <img src="imagen3/img2.jpg" alt="Juego de polos básicos">
+        <h3>Juego de polos basicos</h3>
+        <p>¡Comodidad que combina con todo!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 3 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img3.jpg',
+          'Chaqueta sin mangas',
+          'Chaqueta ligera sin mangas que brinda estilo y libertad de movimiento. Ideal para climas templados o looks urbanos.'
+        )">
+        <img src="imagen3/img3.jpg" alt="Chaqueta sin mangas">
+        <h3>Chaqueta sin mangas</h3>
+        <p>¡Llévala con estilo, sin perder comodidad!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 4 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img4.jpg',
+          'Polo manga larga',
+          'Polo de manga larga cómodo y suave, perfecto para días fríos o para combinar con ropa casual.'
+        )">
+        <img src="imagen3/img4.jpg" alt="Polo manga larga">
+        <h3>Polo manga larga</h3>
+        <p>¡Clásico, cálido y versátil!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 5 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img5.jpg',
+          'Camisas de vestir',
+          'Camisas elegantes diseñadas para ocasiones formales o trabajo. Te brindan estilo, presencia y comodidad.'
+        )">
+        <img src="imagen3/img5.jpg" alt="Camisas de vestir">
+        <h3>Camisas de vestir</h3>
+        <p>¡Elegancia que nunca falla!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 6 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img6.jpg',
+          'Short Jeans',
+          'Shorts de jean resistentes y modernos, perfectos para el verano o para un look casual relajado.'
+        )">
+        <img src="imagen3/img6.jpg" alt="Short Jeans">
+        <h3>Short Jeans</h3>
+        <p>¡Cómodos, frescos y con estilo!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 7 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img7.jpg',
+          'Vestimenta blanca',
+          'Conjunto blanco elegante y llamativo, ideal para eventos, sesiones de fotos o looks minimalistas.'
+        )">
+        <img src="imagen3/img7.jpg" alt="Vestimenta blanca">
+        <h3>Vestimenta blanca</h3>
+        <p>¡Pureza y estilo en un solo outfit!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 8 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img8.jpg',
+          'Juego de vestuario',
+          'Conjunto completo de ropa casual ideal para uso diario, combinando comodidad y estilo en cada pieza.'
+        )">
+        <img src="imagen3/img8.jpg" alt="Juego de vestuario">
+        <h3>Juego de vesturio</h3>
+        <p>¡Práctico, cómodo y listo para usar!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 9 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img9.jpg',
+          'Zapatillas AIR',
+          'Zapatillas ligeras y modernas con suela acolchada para brindar comodidad durante todo el día.'
+        )">
+        <img src="imagen3/img9.jpg" alt="Zapatillas AIR">
+        <h3>Zapatillas AIR</h3>
+        <p>¡Camina con estilo y suavidad!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 10 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img10.jpg',
+          'Saco marrón',
+          'Saco elegante de tono marrón, perfecto para climas fríos y para complementar outfits casuales o formales.'
+        )">
+        <img src="imagen3/img10.jpg" alt="Saco marron">
+        <h3>Saco marron</h3>
+        <p>¡Abrígate sin perder estilo!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 11 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img11.jpg',
+          'Casaca marrón',
+          'Casaca resistente y abrigadora con un diseño moderno. Ideal para días fríos y salidas casuales.'
+        )">
+        <img src="imagen3/img11.jpg" alt="Casaca Marron">
+        <h3>Casaca Marron</h3>
+        <p>¡Calor y estilo en una sola prenda!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 12 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img12.jpg',
+          'Polo negro',
+          'Polo clásico en color negro, suave y versátil para cualquier ocasión y fácil de combinar.'
+        )">
+        <img src="imagen3/img12.jpg" alt="Polo Negro">
+        <h3>Polo Negro</h3>
+        <p>¡El básico que nunca falla!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 13 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img13.jpg',
+          'Poncho de tela',
+          'Poncho ligero de tela suave, ideal para climas templados y estilos bohemios o tradicionales.'
+        )">
+        <img src="imagen3/img13.jpg" alt="Poncho de tela">
+        <h3>Poncho de tela</h3>
+        <p>¡Cómodo, ligero y con estilo único!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 14 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img14.jpg',
+          'Prendas',
+          'Conjunto de prendas variadas para uso diario, combinando comodidad, frescura y estilo casual.'
+        )">
+        <img src="imagen3/img14.jpg" alt="Prendas">
+        <h3>Prendas</h3>
+        <p>¡Versátiles y fáciles de combinar!</p>
+      </div>
+
+      <!-- 🔸 PRODUCTO 15 -->
+      <div class="producto"
+        onclick="abrirModal(
+          'imagen3/img15.jpg',
+          'Polos básicos',
+          'Polos cómodos y ligeros diseñados para el día a día. Perfectos para cualquier estilo y ocasión.'
+        )">
+        <img src="imagen3/img15.jpg" alt="Polos basicos">
+        <h3>Polos basicos</h3>
+        <p>¡Confort que se adapta a ti!</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-contenido">
+      <div class="modal-imagen">
+        <img id="modal-img" src="" alt="">
+      </div>
+      <div class="modal-info">
+        <h3 id="modal-titulo"></h3>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+    <button class="cerrar-modal" onclick="cerrarModal()">×</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 <span class="resaltado">MercLynk</span>. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="catalogo.js"></script>
+</body>
+</html>
