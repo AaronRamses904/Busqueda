@@ -1,0 +1,71 @@
+/* Fondo suave */
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa; /* blanco suave */
+  padding: 40px;
+  color: #111; /* texto negro */
+}
+
+/* Caja principal */
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: #fff; /* blanco */
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+/* Título */
+.container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #111;
+  font-weight: bold;
+}
+
+/* Texto */
+.container p {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  background: #fff;
+  color: #000;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #111; /* borde negro */
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+/* Botón (negro) */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #000; /* negro */
+  color: #fff; /* texto blanco */
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+/* Hover (amarillo con texto negro) */
+button:hover {
+  background: #f1c40f; /* amarillo */
+  color: #111; /* texto negro */
+  border-color: #f1c40f;
+}

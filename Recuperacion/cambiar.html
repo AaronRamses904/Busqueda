@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cambiar contraseña</title>
+  <link rel="stylesheet" href="Recuperacion.css"> <!-- deja tu nombre de css -->
+</head>
+<body>
+
+  <div class="container">
+    <h2>Cambiar contraseña</h2>
+
+    <p>Escribe tu nueva contraseña.</p>
+
+    <!-- Form con id correcto -->
+    <form id="formCambiar" novalidate>
+      <input type="password" id="nuevaPass" placeholder="Nueva contraseña" required>
+      <input type="password" id="confirmarPass" placeholder="Confirmar contraseña" required>
+
+      <!-- Mensaje de error/éxito -->
+      <div id="mensajeCambio" role="status" style="margin:10px 0; min-height:18px;"></div>
+
+      <button type="submit">Guardar contraseña</button>
+    </form>
+  </div>
+
+  <script src="cambiar.js"></script>
+</body>
+</html>
+
