@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventario | MercLynk</title>
+  <link rel="stylesheet" href="inventario.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🔹 ENCABEZADO -->
+<header class="header">
+    <div class="logo">
+      <h1 class="logo-text">
+       <a href="../index.html"><span class="merc">Merc</span><span class="lynk">Lynk</span></a>
+      </h1>
+    </div>
+    <!--boton perfil-->
+<button class="user-btn">
+  <a href="../perfil/perfil.html" class="link-perfil">
+    <svg width="39" height="39" viewBox="0 0 24 24" fill="none">
+      <path
+        stroke="#ffffff"
+        stroke-width="1.25"
+        d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+      />
+    </svg>
+  </a>
+</button>
+
+</header>
+
+  <!-- 🔹 FORMULARIO -->
+  <section class="form-section">
+    <h2>Agregar producto</h2>
+
+    <form id="form-producto" class="formulario">
+      <input type="text" id="nombre" placeholder="Nombre del producto" required />
+      <input type="number" id="precio" placeholder="Precio (S/.)" required />
+      <input type="number" id="stock" placeholder="Cantidad en stock" required />
+      <button type="submit">Agregar</button>
+    </form>
+  </section>
+
+  <!-- 🔹 TABLA DE INVENTARIO -->
+  <section class="tabla-section">
+    <h2>Inventario actual</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio (S/.)</th>
+          <th>Stock</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+
+      <tbody id="tabla-body">
+        <!-- Los productos se agregan dinámicamente -->
+      </tbody>
+    </table>
+  </section>
+   <!-- 🔹 FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-info">
+        <h4>Sobre MercLynk</h4>
+        <p>Una plataforma creada para impulsar el emprendimiento peruano, conectando vendedores y compradores a nivel nacional.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Enlaces útiles</h4>
+        <ul>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-redes">
+        <h4>Síguenos</h4>
+        <li> <a href="https://www.facebook.com/profile.php?id=61582792077567">Facebook</a> </li>
+         <li><a href="https://www.instagram.com/merclynk_oficial/">Instagram</a></li>
+         <li><a href="https://www.tiktok.com/@merclynk">TikTok</a></li>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 MercLynk - Todos los derechos reservados</p>
+  </footer>
+
+  
+  <script src="inventario.js"></script>
+</body>
+</html>

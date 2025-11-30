@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  padding-bottom: 40px;
+}
+
+/* =============================== */
+/*          HEADER COMPLETO        */
+/* =============================== */
+
+.header {
+  background: #000000;
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  display: flex;               /* ✔ estructura en fila */
+  align-items: center;         /* ✔ centra verticalmente */
+  justify-content: space-between; /* logo izquierda - nav centro */
+  gap: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* -------- LOGO IZQUIERDA -------- */
+
+.logo img {
+  height: 60px;  /* ✔ tamaño ideal */
+  width: auto;
+  display: block;
+}
+.logo-text{
+ text-decoration-line: none;
+}
+.merc{
+  color: white;
+  
+}
+.lynk{
+  color: #ffd633;
+  text-decoration: none;
+}
+
+
+
+nav{
+  width: 100%;
+  padding-left: 0;
+  background-color: transparent;
+  display: inline;
+
+}
+.nav a{
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:500;
+}
+
+  
+.nav a:hover{
+  color:#ffcc00;
+}
+.nav ul{
+  display:flex;
+  list-style:none;
+  justify-content: space-between;
+}
+/*Icono perfil*/
+.user-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white; /* ← controla el color del ícono */
+}
+.user-btn:hover {
+  color: #ffcc00;
+}
+
+/*Barra de busqueda*/
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  margin-left: 750px;
+  position: relative;
+  display: flex;
+  width: 40vh;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(255, 255, 255);
+  background-color: #00000000;
+  border-radius: 50%;
+}
+
+@media (max-width: 660px) {
+  .inputGroup label {
+    display: none;  }
+  .inputGroup {
+    width: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .inputGroup label {
+    display: flex;  }
+  .inputGroup {
+    width: 70%;
+  }
+  nav {
+    display: none;
+  }
+}
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(0.97);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.1em;
+  background-color: #000000bc;
+  border-radius: 50%;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: #ffcc00;
+}
+
+.inputGroup-Buscar {
+  position: absolute;
+  right: 10px;                 /* distancia del borde derecho del input */
+  top: 50%;                    /* lo coloca a la mitad del input */
+  transform: translateY(-50%); /* lo centra perfectamente */
+  border-radius: 100%;
+}
+
+.inputGroup-Buscar button {
+    background-color: black;
+    border: none;
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;   /* centra el SVG dentro del botón */
+    justify-content: center;
+    transition: background-color .3s ease, transform .2s ease;
+}
+
+/* Lupa blanca inicialmente */
+.inputGroup-Buscar button svg path {
+    stroke: white;
+    transition: stroke .3s ease;
+}
+
+/* Hover → lupa amarilla */
+.inputGroup-Buscar button:hover svg path {
+    stroke:#ffcc00;
+}
+
+/* Active (cuando presiona el botón) → más intensidad */
+.inputGroup-Buscar button:active svg path {
+    stroke: #ffcc00;
+    transform: scale(0.95);
+}
+
+/* =============================== */
+/*          FORMULARIO             */
+/* =============================== */
+
+.form-section {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  background: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+  color: white;
+}
+
+.formulario {
+  display: grid;
+  gap: 10px;
+}
+
+.formulario input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.formulario button {
+  padding: 10px;
+  background: #ffd633;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formulario button:hover {
+  background: #ffcc00;
+}
+
+
+/* =============================== */
+/*             TABLA               */
+/* =============================== */
+
+.tabla-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.tabla-section h2 {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #ffcc00;
+  color: white;
+}
+
+tr:hover {
+  background: #f0f8ff;
+}
+
+/* BOTONES */
+
+.btn-eliminar {
+  padding: 6px 12px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background: #cc0000;
+}
+/* =============================== */
+/*             FOOTER              */
+/* =============================== */
+
+.footer{
+    background:#000000;   /* ← NEGRO */
+    color:#ffffff;        /* ← TEXTO BLANCO */
+    padding:40px 20px;
+}
+
+.footer-contenido{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.footer h4{
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.footer a{
+    color:#ffd633;        /* Amarillo MercLynk */
+    text-decoration:none;
+    display:inline;
+    margin:5px 0;
+}
+
+.footer a:hover{
+    color:#ffffff;
+}
+
+.footer-copy{
+    text-align:center;
+    font-size:0.9em;
+    color:#ffffff;
+}
+html, body{
+    height:100%;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+}
+
+main{
+    flex:1;
+}

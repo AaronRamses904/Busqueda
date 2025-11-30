@@ -1,0 +1,176 @@
+/* ----------- RESET ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------- HEADER ----------- */
+.header {
+  width: 100%;
+  background: #000;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.merc { color: #fff; }
+.lynk { color: #ffcc00; }
+
+/* 🔥 QUITAR EL CUADRO DEL ICONO */
+.user-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.user-btn svg {
+  fill: none;
+  stroke: white;
+  width: 36px;
+  height: 36px;
+}
+
+/* ----------- CONTENEDOR DEL PERFIL ----------- */
+.perfil-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* TARJETA */
+.perfil-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+/* ----------- FOTO ----------- */
+.perfil-foto img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #ffcc00;
+  object-fit: cover;
+}
+
+.btn-cambiar-foto {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-cambiar-foto:hover {
+  background: #222;
+}
+
+/* ----------- INFORMACIÓN ----------- */
+.perfil-info {
+  flex: 1;
+}
+
+.perfil-info h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.correo {
+  color: #555;
+}
+
+.rol {
+  margin-bottom: 20px;
+  color: #777;
+}
+
+/* BOTONES */
+.perfil-opciones {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+}
+
+.btn-opcion {
+  padding: 12px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-opcion:hover {
+  background: #e6b800;
+}
+
+/* ----------- FOOTER ----------- */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: auto;
+}
+
+.footer-contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+
+.footer h4 {
+  color: #ffcc00;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffcc00;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+}
+
+/* Icono del usuario siempre en blanco */
+.user-btn svg,
+.user-btn svg path {
+  stroke: #ffffff !important; /* Líneas blancas */
+  fill: none !important;      /* Sin relleno azul */
+}
+.btn-link {
+  display: block;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}

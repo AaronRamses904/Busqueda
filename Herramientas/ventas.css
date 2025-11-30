@@ -1,0 +1,254 @@
+/* ------------------------------
+   RESETEO GENERAL
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+}
+
+
+
+/* ------------------------------
+   🔹 HEADER MERCLYNK
+------------------------------ */
+
+.header {
+  width: 100%;
+  background: #000;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* LOGO PRINCIPAL */
+.logo-text {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.merc {
+  color: #ffffff;
+}
+
+.lynk {
+  color: #ffcc00;
+}
+
+/* MINI LOGO (M L) */
+.logo2 {
+  display: none;
+}
+
+.logo-text2 {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.merc2 {
+  color: #ffffff;
+}
+
+.lynk2 {
+  color: #ffcc00;
+}
+
+/* BARRA DE BÚSQUEDA */
+.inputGroup {
+  position: relative;
+  width: 260px;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px 12px;
+  background: #222;
+  border: 2px solid #555;
+  border-radius: 8px;
+  color: white;
+}
+
+.inputGroup input:focus {
+  border-color: #ffcc00;
+}
+
+.inputGroup label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #bbb;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.inputGroup input:focus + label,
+.inputGroup input:not(:placeholder-shown) + label {
+  top: -8px;
+  background: #000;
+  padding: 0 4px;
+  font-size: 12px;
+  color: #ffcc00;
+}
+
+/* BOTÓN USUARIO */
+.user-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.user-btn:hover {
+  opacity: 0.8;
+}
+
+
+
+/* ------------------------------
+   🔹 SISTEMA DE VENTAS
+------------------------------ */
+
+.venta-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.venta-container h2 {
+  margin-bottom: 20px;
+}
+
+/* FORMULARIO */
+.venta-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.venta-form input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.venta-form button {
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.venta-form button:hover {
+  background: #f1c400;
+}
+
+/* TABLA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #ffcc00;
+  color: #000;
+}
+
+tr:hover {
+  background: #f5f5f5;
+}
+
+.btn-eliminar {
+  background: red;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background: #b30000;
+}
+
+.total-box {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
+/* ------------------------------
+   🔹 FOOTER MERCLYNK (NEGRO)
+------------------------------ */
+
+.footer {
+  background: #000;        /* 🔥 Ahora negro */
+  color: #fff;             /* Texto blanco */
+  padding: 40px 20px;
+  margin-top: auto;        /* Footer siempre abajo */
+}
+
+.footer-contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer h4 {
+  margin-bottom: 8px;
+  color: #ffcc00;          /* Títulos amarillo MercLynk */
+}
+
+.footer li {
+  list-style: none;
+  margin: 6px 0;
+}
+
+.footer a {
+  color: #fff;             /* Enlaces blancos */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffcc00;          /* Hover amarillo */
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;             /* Texto gris suave */
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
